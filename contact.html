@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Allen Bajit" content="Contact page for Crystal Summit Lodge">
+    <title>Crystal Summit Lodge</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <link rel="icon" href="images/favicon_io/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+</head>
+
+<body>
+    <header>
+        <h1>Crystal Summit Lodge</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id ="contact-main">
+        <section id = "formSection">
+            
+            <section id="column-left">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!<br>Required fields marked with a *</p>
+                <img src="images/swiss-peak.jpg" alt="A flowing river with trees on each side of the bank, all leading from the top of a icy mountain in the distance">
+            </section> 
+            
+            <form id = "column-right"> 
+                
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <br><br>
+            
+                <!-- Email Address -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+            
+                <!-- Phone Number -->
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+                <br><br>
+            
+                <!-- Preferred Contact Method -->
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                    <label for="contact-email">Email</label>
+                    <br>
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                    <label for="contact-phone">Phone</label>
+                </fieldset>
+                <br>
+            
+                <!-- Comments -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+                <br><br>
+            
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+
+        </section>
+        
+
+        
+    </main>
+    <footer>
+        <p>Copyright &copy;2024 Crystal Summit Lodge</p>
+        <p>This site is for educational purposes only.</p>
+    </footer>
+</body>
+</html>
